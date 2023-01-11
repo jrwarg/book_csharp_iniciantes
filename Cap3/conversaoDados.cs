@@ -15,7 +15,7 @@ namespace livrocsharp
             object objPercentual = percentual;
             WriteLine($"percentual: {percentual} - {percentual.GetType()}");
             WriteLine($"objPercentual: {objPercentual} - {objPercentual.GetType()}");
-            
+
             decimal salario = 12500.50M;
             object objSalario = salario;
             WriteLine($"salario: {salario} - {salario.GetType()}");
@@ -65,10 +65,11 @@ namespace livrocsharp
                 WriteLine($"{Int64.Parse("5432123456")}");
 
                 WriteLine($"Data: {DateTime.Parse("21/4/2021"):dd/MMM/yyyy}");
-            } catch (Exception e)
+            }
+            catch (Exception e)
             {
                 WriteLine(e);
-            } 
+            }
 
             try
             {
@@ -76,9 +77,36 @@ namespace livrocsharp
                 WriteLine("====Convert Números====");
                 int n1 = Convert.ToInt16("100");
                 WriteLine($"{n1.GetType()} - {n1}");
+                Int32 n2 = Convert.ToInt32("200500");
+                WriteLine($"{n2.GetType()} - {n2}");
+                Int64 n3 = Convert.ToInt64("100323213132321");
+                WriteLine($"{n3.GetType()} - {n3}");
+                decimal preco = Convert.ToDecimal("1420,50");
+                WriteLine($"{preco.GetType()} - {preco:n2}");
 
-                int 
-            }       
+                WriteLine($"====Convert String====");
+                string texto1 = Convert.ToString(250.59M);
+                WriteLine($"{texto1.GetType()} - {texto1} - resultado: {texto1 ?? "texto é nulo"}");
+
+                string texto2 = Convert.ToString(DateTime.Today);
+                WriteLine($"{texto2.GetType()} - {texto2}");
+
+                WriteLine("==== Convert Boleano====");
+                bool valido = Convert.ToBoolean("false");
+                WriteLine($"{valido.GetType()} - {valido}");
+                WriteLine($"0 - {Convert.ToBoolean(0)}");
+                WriteLine($"1 - {Convert.ToBoolean(1)}");
+                WriteLine($"100 - {Convert.ToBoolean(100)}");
+
+                WriteLine("====Convert Data====");
+                DateTime natal = Convert.ToDateTime("25/12/2021");
+                WriteLine($"Natal: {natal.GetType()} - {natal:dd/MMMM/yyyy}");
+                WriteLine($"Natal: {natal.Day} - {natal.Month} - {natal.Year}");
+            }
+            catch (Exception e)
+            {
+                WriteLine(e);
+            }
         }
     }
 }

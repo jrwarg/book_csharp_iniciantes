@@ -1,4 +1,4 @@
-using System;
+/* using System;
 
 namespace MinhaPrimeiraClasse
 {
@@ -47,4 +47,4 @@ namespace MinhaPrimeiraClasse
         }
     }
 
-}
+} */

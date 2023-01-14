@@ -13,6 +13,15 @@ namespace Libraryclass
             _MesPublicacao = MesPublicacao;
             _AnoPublicacao = AnoPublicacao;           
         }
+
+        public int? MesPublicacao // Método para acesso à propriedade da classe
+        {
+            get {return _MesPublicacao;} set { _MesPublicacao = value;}
+        }
+        public int? AnoPublicacao
+        { 
+            get {return _AnoPublicacao;} set {_AnoPublicacao = value;}
+        }
     }
 }
 

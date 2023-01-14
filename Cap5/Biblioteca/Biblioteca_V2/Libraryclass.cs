@@ -8,11 +8,10 @@ namespace Libraryclass
         private int?_MesPublicacao;
         private int? _AnoPublicacao;
         // Construtor de classe:
-        public Revistas( int _MesPublicacao, int _AnoPublicacao)
+        public Revistas( int MesPublicacao, int AnoPublicacao)
         {
-            _MesPublicacao = _MesPublicacao;
-            _AnoPublicacao = AnoPublicacao;
-            
+            _MesPublicacao = MesPublicacao;
+            _AnoPublicacao = AnoPublicacao;           
         }
     }
 }

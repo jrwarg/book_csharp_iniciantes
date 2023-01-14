@@ -61,7 +61,15 @@ namespace Biblioteca_V2
             WriteLine("Foto Páginas: " + MinhasFotos.Paginas);
             WriteLine("Foto Status: " + MinhasFotos.Status);
             WriteLine();
-            
+
+            // Mesmo método com comportamentos diferentes ("Polimorfismo")
+            MeusLivros.Descarte();
+            WriteLine("Título: " + MeusLivros.Titulo);
+            MinhasRevistas.Descarte();
+            WriteLine("Título: " + MinhasRevistas.Titulo);
+            MinhasFotos.Descarte();
+            WriteLine("Título: " + MinhasFotos.Titulo);
+            WriteLine();
         }
     }
 }

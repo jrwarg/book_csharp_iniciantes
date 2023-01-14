@@ -13,7 +13,6 @@ namespace Libraryclass
             _MesPublicacao = MesPublicacao;
             _AnoPublicacao = AnoPublicacao;           
         }
-
         public int? MesPublicacao // Método para acesso à propriedade da classe
         {
             get {return _MesPublicacao;} set { _MesPublicacao = value;}
@@ -21,6 +20,11 @@ namespace Libraryclass
         public int? AnoPublicacao
         { 
             get {return _AnoPublicacao;} set {_AnoPublicacao = value;}
+        }
+
+        public override void Descarte()
+        {
+        this.Titulo = "A Revista foi descartada";
         }
     }
 
@@ -37,6 +41,11 @@ namespace Libraryclass
         public string? Tipo // Método para acesso à propriedade
         {
             get {return _Tipo;} set {_Tipo = value;}
+        }
+        // criando um método para Descarte
+        public override void Descarte()
+        {
+            this.Titulo = "A foto foi destruída";
         }
     }
 }

@@ -37,6 +37,11 @@ namespace Libraryclass
         {
             get {return _Status;} set {_Status = value;}
         }
+        // Método Descarte
+        public virtual void Descarte()
+        {
+            _Titulo = "O livro foi Doado";
+        }
         
     }
 }

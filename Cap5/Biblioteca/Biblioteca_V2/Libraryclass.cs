@@ -23,5 +23,21 @@ namespace Libraryclass
             get {return _AnoPublicacao;} set {_AnoPublicacao = value;}
         }
     }
+
+    public class Fotos : Revistas
+    {
+        // propriedades da classe:
+        private string? _Tipo;
+        // neste construtor precisamos referenciar a classe base Revistas
+        // Revistas é uma classe já herdada de Biblioteca
+        public Fotos (string Tipo) : base (0, 0)
+        {
+            _Tipo = Tipo;
+        }
+        public string? Tipo // Método para acesso à propriedade
+        {
+            get {return _Tipo;} set {_Tipo = value;}
+        }
+    }
 }
 

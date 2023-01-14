@@ -44,7 +44,23 @@ namespace Biblioteca_V2
             WriteLine("Páginas: " + MeusLivros.Paginas);
             WriteLine("Status: " + MeusLivros.Status);
             WriteLine();
-
+            // Inicializando nossa nova classe Fotos:
+            Fotos MinhasFotos = new Fotos("Colorida");
+            MinhasFotos.AnoPublicacao = 2021;
+            MinhasFotos.MesPublicacao = 3;
+            MinhasFotos.Autor = "Desconhecido";
+            MinhasFotos.Titulo= "Vida Eterna";
+            MinhasFotos.Paginas = 1;
+            MinhasFotos.Status = true;
+            // Imprimindo os valores de minha classe
+            WriteLine("Foto Tipo: " + MinhasFotos.Tipo);
+            WriteLine("Foto Mês: " + MinhasFotos.MesPublicacao);
+            WriteLine("Foto Ano: " + MinhasFotos.AnoPublicacao);
+            WriteLine("Foto Autor: " + MinhasFotos.Autor);
+            WriteLine("Foto Título: " + MinhasFotos.Titulo);
+            WriteLine("Foto Páginas: " + MinhasFotos.Paginas);
+            WriteLine("Foto Status: " + MinhasFotos.Status);
+            WriteLine();
             
         }
     }
